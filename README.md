@@ -33,6 +33,8 @@ How to use
 	}]);
 	```
 
+Obs.: See the [Demo page](http://the-darc.github.io/angular-mousetrap/) for pratical real example.
+
 How to contribute
 -----------------
 
@@ -41,6 +43,6 @@ I am very glad to see this project living with pull requests.
 LICENSE
 -------
 
-Copyright (c) 2014 Igor Rafael
+Copyright (c) 2015 Daniel Campos
 
 Licensed under the MIT license.
