@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AngularJS Service for dependency injection of mousetrap.js</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+	<script src="../release/angular-mousetrap-service.min.js"></script>
+	<script>
+		angular.module('exampleApp', ['angular-mousetrap'])
+		.controller('ExampleCtrl', ['$scope','Mousetrap','$timeout', function($scope, Mousetrap, $timeout){
+			$scope.configs = {
+				keys: 'a',
+				typed: 'Waiting...'
+			};
+
+			$scope.$watch('configs.keys', function() {
+				Mousetrap.reset();
+				Mousetrap.bind($scope.configs.keys, function() {
+					$timeout(function() {
+						$scope.configs.typed = 'TYPED!';
+					}, 0);
+					$timeout(function() {
+						$scope.configs.typed = 'Waiting...';
+					}, 2000);
+				});
+			});
+
+		}])
+	</script>
+</head>
+<body ng-app="exampleApp">
+	<center ng-controller="ExampleCtrl">
+		<h1>angular-mousetrap-service</h1>
+		<div>
+			<label>Keys to bind: </label>
+			<input type='text' ng-model='configs.keys'/>
+		</div>
+		<div>
+			<p>Type the key(s) '{{configs.keys}}': <strong>{{configs.typed}}</strong></p>
+		</div>
+	</center>
+</body>
+</html>
