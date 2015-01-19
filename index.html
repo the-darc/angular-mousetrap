@@ -37,7 +37,7 @@
 <p>An <a href="https://angularjs.org">AngularJS</a> wrapper for <a href="http://craig.is/killing/mice">mousetrap.js</a> whithout registering it in the global scope.</p>
 
 <h3>
-  <a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo
+  <a class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>Demo
 </h3>
 
   <script>
@@ -76,7 +76,7 @@
 </div>
 
 <h3>
-  <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use
+  <a class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to use
 </h3>
 
     <ol>
@@ -88,14 +88,50 @@
     <pre><code>&lt;script src="angular-mousetrap-service.min.js"&gt;&lt;/script&gt;</code></pre>
 
     <li>Add <em>angular-mousetrap</em> module in the dependencies of a angular module:</li>
-    <pre><code>angular.module('exampleApp', ['angular-mousetrap'])</code></pre>
+    <pre><code>angular.module('myApp', ['angular-mousetrap'])</code></pre>
 
     <li>Inject the Mousetrap service into a controller, a directive, etc:</li>
-<pre><code>.controller('ExampleCtrl', ['$scope','Mousetrap',
+<pre><code>angular.module('myApp', ['angular-mousetrap'])
+.controller('ExampleCtrl', ['$scope','Mousetrap',
     function($scope, Mousetrap){
         Mousetrap.bind('ctrl+s', function() {/*...*/});
     }
 ]);</code></pre>
+    </ol>
+
+<h3>
+  <a class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to contribute
+</h3>
+
+<p>I would to see this project living by pull requests.</p>
+
+<h3>
+  <a class="anchor" aria-hidden="true"><span class="octicon octicon-link"></span></a>License
+</h3>
+
+<p>
+The MIT License (MIT)<br/><br/>
+
+Copyright (c) 2015 Daniel Campos<br/><br/>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:<br/><br/>
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.<br/><br/>
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</p>
 
         </section>
 
