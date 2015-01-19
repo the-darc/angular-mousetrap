@@ -1,0 +1,26 @@
+{
+  "name": "angular-mousetrap-service",
+  "version": "0.1.0",
+  "homepage": "https://github.com/the-darc/angular-mousetrap",
+  "authors": [
+    "darc <darc.tec@gmail.com>"
+  ],
+  "description": "AngularJS Service for dependency injection of mousetrap.js",
+  "main": "release/service.min.js",
+  "keywords": [
+    "mousetrap",
+    "angular",
+    "keyboard",
+    "shortcuts",
+    "events"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "mousetrap": "~1.4.6"
+  }
+}
