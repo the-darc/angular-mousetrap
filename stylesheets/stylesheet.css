@@ -113,13 +113,13 @@ a.button {
   line-height: 25px;
   color: #303030;
   background: #fdfdfd; /* Old browsers */
-  background: -moz-linear-gradient(top,  #fdfdfd 0%, #f2f2f2 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #fdfdfd 0%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  #fdfdfd 0%,#f2f2f2 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  #fdfdfd 0%,#f2f2f2 100%); /* IE10+ */
-  background: linear-gradient(top,  #fdfdfd 0%,#f2f2f2 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */
+  background: -moz-linear-gradient(top,  #fdfdfd 0%, #a3a3a3 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#a3a3a3)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #fdfdfd 0%,#a3a3a3 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #fdfdfd 0%,#a3a3a3 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #fdfdfd 0%,#a3a3a3 100%); /* IE10+ */
+  background: linear-gradient(top,  #fdfdfd 0%,#a3a3a3 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#a3a3a3',GradientType=0 ); /* IE6-9 */
   border-top: solid 1px #cbcbcb;
   border-right: solid 1px #b7b7b7;
   border-bottom: solid 1px #b3b3b3;
@@ -174,26 +174,27 @@ code, pre {
 
 code {
   padding: 0 3px;
-  background-color: #f2f2f2;
+  background-color: #a3a3a3;
   border: solid 1px #ddd;
 }
 
 pre {
-  padding: 20px;
+  padding: 10px;
   overflow: auto;
-  color: #f2f2f2;
+  color: #a3a3a3;
   text-shadow: none;
   background: #303030;
 }
 pre code {
   padding: 0;
-  color: #f2f2f2;
+  color: #a3a3a3;
   background-color: #303030;
   border: none;
 }
 
 ul, ol, dl {
   margin-bottom: 20px;
+  margin-left: 25px;
 }
 
 
@@ -233,7 +234,7 @@ td {
 
 form {
   padding: 20px;
-  background: #f2f2f2;
+  background: #a3a3a3;
 
 }
 
@@ -255,7 +256,8 @@ h3 {
   margin-bottom: 8px;
   font-size: 18px;
   font-weight: bold;
-  color: #d5000d;
+  color: black;
+  border-bottom: 1px solid black;
 }
 
 h4 {
