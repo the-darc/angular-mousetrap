@@ -1,7 +1,7 @@
-[![Bower version](https://badge.fury.io/bo/angular-mousetrap-service.svg)](http://badge.fury.io/bo/angular-mousetrap-service)
-
 angular-mousetrap-service
 =========================
+[![npm version](https://badge.fury.io/js/angular-mousetrap-service.svg)](http://badge.fury.io/js/angular-mousetrap-service)
+[![Bower version](https://badge.fury.io/bo/angular-mousetrap-service.svg)](http://badge.fury.io/bo/angular-mousetrap-service)
 
 [AngularJS](https://angularjs.org) Wrapper for [mousetrap.js](http://craig.is/killing/mice) whithout registering it in the global scope.
 
@@ -9,10 +9,9 @@ angular-mousetrap-service
 How to use
 ----------
 
-1. Install angular-mousetrap-service via bower:
-	```
-	bower install --save angular-mousetrap-service
-	```
+1. Install angular-mousetrap-service.  
+Using bower: `bower install --save angular-mousetrap-service`  
+Or, using npm: `npm install --save angular-mousetrap-service`
 
 2. Include angular-mousetrap-service into your project.
 	```HTML
