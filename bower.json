@@ -6,7 +6,7 @@
     "darc <darc.tec@gmail.com>"
   ],
   "description": "AngularJS Service for dependency injection of mousetrap.js",
-  "main": "release/service.min.js",
+  "main": "release/angular-mousetrap-service.min.js",
   "keywords": [
     "mousetrap",
     "angular",
